@@ -18,7 +18,7 @@
 #define WORLD_1			0
 #define WORLD_INTRO		6
 #define WORLD_1_1		1
-#define WORLD_1_4		4
+#define WORLD_1_3		4
 
 #define CAM_CHANGE_TIME		30
 

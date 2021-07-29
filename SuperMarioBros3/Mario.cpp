@@ -693,7 +693,7 @@ void CMario::Update(DWORD dt, vector<LPGAMEOBJECT> *coObjects)
 			if (y <= -HUD_HEIGHT)
 				y = -HUD_HEIGHT;
 
-			if (game->GetCurrentScene()->GetId() == WORLD_1_4)
+			if (game->GetCurrentScene()->GetId() == WORLD_1_3)
 			{
 				if ( x - 1 <= game->GetCamX())
 				{

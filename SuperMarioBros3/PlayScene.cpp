@@ -526,7 +526,7 @@ void CPlayScene::SetCam(float cx, float cy, DWORD dt)
 	mh = current_map->GetMapHeight();
 	//DebugOut(L"dt %u\n", dt);
 	//Update camera to follow mario
-	if (id == WORLD_1_4)
+	if (id == WORLD_1_3)
 	{
 		sum_dt += dt;
 		// CamX
@@ -576,36 +576,6 @@ void CPlayScene::SetCam(float cx, float cy, DWORD dt)
 		current_map->SetCamPos(cx, cy);
 		hud->SetPosition(ceil(cx), ceil(cy + sh - HUD_HEIGHT));
 	}
-
-
-	//cx -= sw / 2;
-	//// CamX
-	//if (cx <= 0)//Left Edge
-	//	cx = 0;
-	//if (cx >= mw - sw)//Right Edge
-	//	cx = mw - sw;
-
-	////CamY
-	//if (isTurnOnCamY)
-	//	cy -= sh / 2;
-	//else
-	//	cy = mh - sh;
-
-	//if (cy <= -HUD_HEIGHT)//Top Edge
-	//	cy = -HUD_HEIGHT;
-	//if (cy + sh >= mh)//Bottom Edge
-	//	cy = mh - sh;
-
-	////Update CamY when Flying
-	//if (player->isFlying)
-	//	isTurnOnCamY = true;
-	//if (cy > mh - sh && !player->isFlying)
-	//	isTurnOnCamY = false;
-	//
-	//game->SetCamPos(ceil(cx), ceil(cy));
-	//current_map->SetCamPos(cx, cy);
-	//hud->SetPosition(ceil(cx), ceil(cy + sh - HUD_HEIGHT));
-
 }
 void CPlayScene::Render()
 {
@@ -718,7 +688,6 @@ void CPlaySceneKeyHandler::OnKeyDown(int KeyCode)
 			if (mario->level == MARIO_LEVEL_FIRE && !mario->isShooting && !mario->isSitting)
 			{
 				mario->StartShooting(mario->x, mario->y);
-				//DebugOut(L"%f %f\n", mario->x, mario->y);
 			}
 			if (mario->level == MARIO_LEVEL_TAIL && !mario->isTurningTail && !mario->isSitting)
 				mario->StartTurning();

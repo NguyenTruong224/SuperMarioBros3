@@ -21,7 +21,7 @@ CWorldScene::CWorldScene(int id, LPCWSTR filePath) :
 
 /*
 	Load scene resources from scene file (textures, sprites, animations and objects)
-	See scene1.txt, scene2.txt for detail format specification
+	See scene1.txt, scene3.txt for detail format specification
 */
 
 

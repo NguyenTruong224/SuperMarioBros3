@@ -32,6 +32,7 @@ void CMap::Render()
 			if(index < TotalTiles )
 				Tiles.at(index)->Draw(CurrentColumn * TILE_WIDTH, CurrentRow * TILE_HEIGHT - HUD_HEIGHT);
 		}
+	
 }
 
 void CMap::SetTileMapData(int** TileMapData)
@@ -48,7 +49,6 @@ void CMap::ExtractTileFromTileSet()
 		int top = TileNum / TotalColumnsOfTileSet * TILE_HEIGHT;
 		int right = left + TILE_WIDTH;
 		int bottom = top + TILE_HEIGHT;
-		//DebugOut(L"[DETAILS]	left %d top %d right %d bottom %d\n", left, top, right, bottom);
 		LPSPRITE NewTile = new CSprite(TileNum, left, top, right, bottom, TileSet); // get tile from tileset
 		this->Tiles.push_back(NewTile);
 	}

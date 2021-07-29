@@ -22,8 +22,6 @@ void CAnimation::Add(int spriteId, DWORD time)
 	frames.push_back(frame);
 	DebugOut(L"[INFO] Animation ID %d added!\n", spriteId);
 }
-
-// NOTE: sometimes Animation object is NULL ??? HOW ??? 
 void CAnimation::Render(float x, float y, int alpha)
 {
 	DWORD now = GetTickCount64();
