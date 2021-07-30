@@ -526,28 +526,6 @@ void CPlayScene::SetCam(float cx, float cy, DWORD dt)
 	mh = current_map->GetMapHeight();
 	//DebugOut(L"dt %u\n", dt);
 	//Update camera to follow mario
-	if (id == WORLD_1_3)
-	{
-		sum_dt += dt;
-		// CamX
-		cx = game->GetCamX();
-		if (sum_dt >= CAM_CHANGE_TIME)
-		{
-			sum_dt = 0;
-			cx ++;
-		}
-		if (cx <= 0)//Left Edge
-			cx = 0;
-		if (cx >= mw - sw)//Right Edge
-			cx = mw - sw;
-
-		cy = mh - sh;
-		game->SetCamPos(cx, ceil(cy));
-		current_map->SetCamPos(cx, ceil(cy));
-		hud->SetPosition(cx, ceil(cy + sh - HUD_HEIGHT));
-	}
-	else 
-	{
 		cx -= sw / 2;
 		// CamX
 		if (cx <= 0)//Left Edge
@@ -575,7 +553,6 @@ void CPlayScene::SetCam(float cx, float cy, DWORD dt)
 		game->SetCamPos(ceil(cx), ceil(cy));
 		current_map->SetCamPos(cx, cy);
 		hud->SetPosition(ceil(cx), ceil(cy + sh - HUD_HEIGHT));
-	}
 }
 void CPlayScene::Render()
 {
