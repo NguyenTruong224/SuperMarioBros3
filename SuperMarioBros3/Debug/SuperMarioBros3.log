@@ -1,6 +1,0 @@
-﻿  Map.cpp
-D:\Source code\Github\SuperMarioBros3\SuperMarioBros3\Map.cpp(23,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Source code\Github\SuperMarioBros3\SuperMarioBros3\Map.cpp(24,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Source code\Github\SuperMarioBros3\SuperMarioBros3\Map.cpp(33,80): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\Source code\Github\SuperMarioBros3\SuperMarioBros3\Map.cpp(33,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  SuperMarioBros3.vcxproj -> D:\Source code\Github\SuperMarioBros3\Debug\SuperMarioBros3.exe

@@ -394,6 +394,6 @@
 3	1385	290	30	2	2	10
 3	1430	290	30	2	2	10
 # --- SCENE PORTAL ----
-#type	x	y	ani	scene	tag start_x start_y	pipeUp
+#type	x	y	ani	scene	tag start_x start_y	#type	x	y	ani	scene	tag start_x start_y	pipeUp
 50	2258	110	0	2	1	132	0	0	0	16
 #50	100	380	0	3	1	130	147	1

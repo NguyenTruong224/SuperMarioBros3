@@ -33,16 +33,6 @@ void CQuestionBrick::Update(DWORD dt, vector<LPGAMEOBJECT>* coObjects)
 			}
 
 		}
-		//if (mario != NULL && scene->GetId() == WORLD_1_4)
-		//{
-		//	mario->GetBoundingBox(mLeft, mTop, mRight, mBottom);
-		//	GetBoundingBox(oLeft, oTop, oRight, oBottom);
-		//	if (isColliding(floor(mLeft), mTop, ceil(mRight), mBottom))
-		//	{
-		//		if (ceil(mRight) == oLeft)
-		//			mario->isBlocked = true;
-		//	}
-		//}
 	}
 	if (isBeingPushedUp && start_y - y >= QUESTIONBRICK_PUSH_MAX_HEIGHT)
 	{

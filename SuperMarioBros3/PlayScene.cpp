@@ -672,7 +672,7 @@ void CPlaySceneKeyHandler::OnKeyDown(int KeyCode)
 		case DIK_R:
 			mario->Reset();
 			break;
-		case DIK_T:
+		case DIK_5:
 			mario->Tele();
 			break;
 		case DIK_S:
